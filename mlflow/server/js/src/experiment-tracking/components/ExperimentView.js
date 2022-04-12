@@ -400,7 +400,7 @@ export class ExperimentView extends Component {
     const { showGetLinkModal } = this.state;
     return (
       <GetLinkModal
-        link={window.location.href}
+        link={window.top.location.href}
         visible={showGetLinkModal}
         onCancel={() => this.setState({ showGetLinkModal: false })}
       />
